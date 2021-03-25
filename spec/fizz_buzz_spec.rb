@@ -3,7 +3,11 @@ require_relative('../src/fizz_buzz')
 describe FizzBuzz do
   subject { FizzBuzz.new } #is not always needed
 
-  it 'is expected to return "Enter a possetive number" if a neg number is typed' do
+  it 'is expected to return "Enter a number" if a string is typed' do
+    expect(subject.check('text')).to eq 'Enter a number!'
+  end
+
+  it 'is expected to return "Enter a positive number" if a neg number is typed' do
     expect(subject.check(-2)).to eq 'Enter a positive number!'
   end
 
