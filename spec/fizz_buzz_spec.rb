@@ -1,7 +1,7 @@
 require_relative('../src/fizz_buzz')
 
 describe FizzBuzz do 
-  subject { FizzBuzz.new }
+  subject { FizzBuzz.new } # is often no needed
 
   it 'is expected to return a number if no game condition are met' do
     expect(subject.check(1)).to eq 1
