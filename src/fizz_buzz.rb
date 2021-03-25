@@ -1,6 +1,8 @@
-class FizzBuzz 
+class FizzBuzz
   def check(num)
-    if num < 0
+    if num.class == String
+      'Enter a number'
+    elsif num <= 0
       'Enter a positive number!'
     elsif num % 15 == 0
       'FizzBuzz'
