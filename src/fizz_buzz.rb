@@ -16,7 +16,7 @@ class FizzBuzz
   end
 end
 
- def hasZeroRemainder?(num, divider)
-   num % divider == 0
- end
+def hasZeroRemainder?(num, divider)
+  num % divider == 0
+end
 
